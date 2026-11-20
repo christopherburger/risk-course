@@ -1,6 +1,6 @@
 ---
-title: "Risk Analysis"
-subtitle: "Name"
+title: "Course Overview"
+subtitle: "Risk Analysis"
 author: "Christopher Burger"
 institute: "University of Mississippi | School of Engineering"
 format: 
@@ -12,4 +12,6 @@ format:
     css: styles.css
 ---
 
-This is the central repository for the lecture notes for CSCI XXXX.
+This is the central repository for the lecture notes for Risk Analysis.
+
+**This course is currently under construction.**

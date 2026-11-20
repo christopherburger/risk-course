@@ -46,12 +46,12 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Risk Analysis",
+    "title": "Course Overview",
     "section": "",
-    "text": "This is the central repository for the lecture notes for CSCI XXXX.",
+    "text": "This is the central repository for the lecture notes for Risk Analysis.\nThis course is currently under construction.",
     "crumbs": [
       "Course Info",
-      "Risk Analysis"
+      "Course Overview"
     ]
   }
 ]

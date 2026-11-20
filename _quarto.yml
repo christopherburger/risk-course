@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs 
+execute:
+  freeze: auto
+
+website:
+  title: "COURSE"
+  sidebar:
+    style: "floating"
+    contents:
+      - section: "Course Info"
+        contents:
+          - index.qmd
+          - conventions.qmd
+          
+      - section: "Lectures"
+        contents:
+
+format:
+  html:
+    theme: cosmo
+    css: custom.css
+    toc: true
+    html-math-method: katex
+    code-copy: true
+
+editor: visual

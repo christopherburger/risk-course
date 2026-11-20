@@ -1,0 +1,15 @@
+---
+title: "Course Template"
+subtitle: "Name"
+author: "Christopher Burger"
+institute: "University of Mississippi | School of Engineering"
+format: 
+  html:
+    theme: default
+    toc: true
+    toc-title: "On this page"
+    toc-depth: 2
+    css: styles.css
+---
+
+This is the central repository for the lecture notes for COURSE. 

@@ -1,0 +1,149 @@
+/*
+ * Content conventions for Quarto course notes.
+ * The five original class names are preserved for compatibility with
+ * existing pages. All styling is local to these boxes.
+ *
+ * The visible category labels are generated automatically, so existing
+ * ::: {.core-box} etc. blocks need no additional markup.
+ */
+
+/* Shared layout: no shadows, oversized corner radii, or emoji labels. */
+:is(.core-box, .reference-box, .note-box, .extended-box, .practice-box) {
+  box-sizing: border-box;
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--box-border);
+  border-left: 4px solid var(--box-accent);
+  border-radius: 10px;
+  background-color: var(--box-background);
+  color: inherit;
+  box-shadow: none;
+  overflow-wrap: break-word;
+}
+
+:is(.core-box, .reference-box, .note-box, .extended-box, .practice-box)::before {
+  display: block;
+  margin: 0 0 0.65rem;
+  padding: 0 0 0.5rem;
+  border-bottom: 1px solid var(--box-border);
+  color: var(--box-accent);
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+}
+
+/* Avoid extra space after the final paragraph, list, or code block. */
+:is(.core-box, .reference-box, .note-box, .extended-box, .practice-box) > :last-child {
+  margin-bottom: 0;
+}
+
+/* Individual identities: consistent shape, distinct color and emphasis. */
+.core-box {
+  --box-accent: #205c9e;
+  --box-background: #edf4fc;
+  --box-border: #cbdeee;
+  border-left-width: 6px;
+}
+.core-box::before { content: "Core Material"; }
+
+.reference-box {
+  --box-accent: #126b67;
+  --box-background: #eff9f7;
+  --box-border: #cce7e2;
+  border-left-style: dashed;
+}
+.reference-box::before { content: "Reference Concepts"; }
+
+.note-box {
+  --box-accent: #516174;
+  --box-background: #f5f7f9;
+  --box-border: #dce4ea;
+  border-left-width: 3px;
+}
+.note-box::before { content: "Notes & Clarifications"; }
+
+.extended-box {
+  --box-accent: #725391;
+  --box-background: #f8f5fb;
+  --box-border: #e5dbea;
+  border-left-width: 3px;
+}
+.extended-box::before { content: "Further Exploration"; }
+
+.practice-box {
+  --box-accent: #267344;
+  --box-background: #eff8f2;
+  --box-border: #cce4d3;
+  border-left-width: 5px;
+}
+.practice-box::before { content: "Practice"; }
+
+/*
+ * Dark palette. The media query supports ordinary dark-mode pages;
+ * Quarto's .quarto-light/.quarto-dark classes take precedence when the
+ * site's theme toggle differs from the operating-system preference.
+ */
+@media (prefers-color-scheme: dark) {
+  body:not(.quarto-light) .core-box {
+    --box-accent: #a2c9f8;
+    --box-background: #203146;
+    --box-border: #3b5470;
+  }
+  body:not(.quarto-light) .reference-box {
+    --box-accent: #89d9cf;
+    --box-background: #1d3534;
+    --box-border: #38605d;
+  }
+  body:not(.quarto-light) .note-box {
+    --box-accent: #c6d1dd;
+    --box-background: #2a323c;
+    --box-border: #46515d;
+  }
+  body:not(.quarto-light) .extended-box {
+    --box-accent: #d2b5ee;
+    --box-background: #32283f;
+    --box-border: #58466c;
+  }
+  body:not(.quarto-light) .practice-box {
+    --box-accent: #9bdab0;
+    --box-background: #21392c;
+    --box-border: #41634a;
+  }
+}
+
+/* Quarto can be switched to dark mode even with a light system theme. */
+body.quarto-dark .core-box {
+  --box-accent: #a2c9f8;
+  --box-background: #203146;
+  --box-border: #3b5470;
+}
+body.quarto-dark .reference-box {
+  --box-accent: #89d9cf;
+  --box-background: #1d3534;
+  --box-border: #38605d;
+}
+body.quarto-dark .note-box {
+  --box-accent: #c6d1dd;
+  --box-background: #2a323c;
+  --box-border: #46515d;
+}
+body.quarto-dark .extended-box {
+  --box-accent: #d2b5ee;
+  --box-background: #32283f;
+  --box-border: #58466c;
+}
+body.quarto-dark .practice-box {
+  --box-accent: #9bdab0;
+  --box-background: #21392c;
+  --box-border: #41634a;
+}
+
+@media print {
+  :is(.core-box, .reference-box, .note-box, .extended-box, .practice-box) {
+    break-inside: avoid;
+    box-shadow: none;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

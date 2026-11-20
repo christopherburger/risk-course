@@ -1,0 +1,33 @@
+---
+title: "Content Conventions"
+---
+
+These labels indicate how to use the material in the course notes. They distinguish what you should study independently, what you may consult as a reference, and where you can explore or practice further.
+
+The labels are a guide, not a substitute for the course learning objectives or instructions for a particular assessment.
+
+## Learning expectations
+
+::: core-box
+The central concepts, definitions, and methods of the course. You should be able to **explain and apply** this material independently, including the reasoning behind a result rather than just its final form. Unless an assessment specifies otherwise, prepare to work with these ideas without consulting the notes.
+:::
+
+::: reference-box
+Supporting tools, formulas, syntax, and concepts that you should **recognize, interpret, and know when to use**. You are not generally expected to recall every detail from memory, but you should be able to find and use the relevant reference when needed.
+:::
+
+## Context and additional depth
+
+::: note-box
+Short explanations of assumptions, terminology, exceptions, or common sources of confusion. A note may clarify core material, so **do not assume that a note is optional** simply because it appears in a separate box.
+:::
+
+::: extended-box
+Optional connections, deeper explanations, and applications beyond the course's required scope. These sections are **not assessed directly**, but they may help you build intuition or explore a subject in greater depth.
+:::
+
+## Applying what you learn
+
+::: practice-box
+Questions and small tasks that let you check your understanding and apply the ideas from nearby sections. Some ask for calculations; others ask you to explain a choice, interpret a result, or examine an assumption.
+:::

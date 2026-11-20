@@ -1,5 +1,5 @@
 ---
-title: "Course Template"
+title: "Risk Analysis"
 subtitle: "Name"
 author: "Christopher Burger"
 institute: "University of Mississippi | School of Engineering"
@@ -12,4 +12,4 @@ format:
     css: styles.css
 ---
 
-This is the central repository for the lecture notes for COURSE. 
+This is the central repository for the lecture notes for CSCI XXXX.
